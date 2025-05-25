@@ -1,0 +1,51 @@
+archanakggowda@gmail.com
+password:jungkook@1997
+  github password:jkvjimin@1234
+  slack use the same mail
+
+mail:archu6367@gmail.com
+password:Archana@2005
+docker hub:same email
+password:Archana@2004
+program 1
+
+java code
+public class HelloWorld {
+	public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+save as HelloWorld.java
+
+dockerfile
+
+FROM openjdk:17
+WORKDIR /app
+COPY HelloWorld.java .
+RUN javac HelloWorld.java
+CMD ["java", "HelloWorld"]
+  
+save as Dockerfile
+new terminal 
+docker build -t jk .
+docker images
+docker login
+docker tag jk:latest archanakggowda0211/newimg
+docker pull archanakggowda0211/newimg
+
+for python file
+a=10
+b=20
+c=a+b
+print(c)
+save as add.py
+
+
+FROM python:3.12
+WORKDIR /app
+COPY add.py .
+CMD ["python", "add.py"]
+save as Dockerfile
+
+
+  
